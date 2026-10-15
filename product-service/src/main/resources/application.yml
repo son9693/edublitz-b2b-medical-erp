@@ -8,7 +8,7 @@ spring:
     name: product-service
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb://localhost:27017/products_db}
+      uri: ${mongosh "mongodb+srv://cluster0.xbwmobm.mongodb.net/" --apiVersion 1 --username soniya1206p_db_user}
       database: products_db
   jackson:
     default-property-inclusion: non_null

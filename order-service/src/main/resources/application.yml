@@ -8,7 +8,8 @@ spring:
     name: order-service
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb://localhost:27017/orders_db}
+      uri: ${mongosh "mongodb+srv://cluster0.xbwmobm.mongodb.net/" --apiVersion 1 --username soniya1206p_db_user}
+      
       database: orders_db
   jackson:
     default-property-inclusion: non_null
